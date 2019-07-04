@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="entStyle.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="menu ">
+            <div class="brand">
+                <a href="index.html">
+                    <img src="ayodejiLogo.png" alt="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Afcon 2019</a></li>
+                    <li><a>sport</a></li>
+                    <li><a>metro plus</a></li>
+                    <li><a>politics</a></li>
+                    <li><a>business</a></li>
+                    <li class="active"><a>entertainment</a></li>
+                    <li><a>editorial</a></li>
+                    <li><a>columnists</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-section">
+            <div class="nav-search">
+                <a href="#">
+                    <span class="search">
+                        <img src="search.svg" alt="search icon">
+                    </span>
+                </a>
+            </div>
+            <div class="nav-search-items">
+                <a href="#" class="menu-two-title">
+                    <span class="side-nav-items-text">sections</span>
+                </a>
+                <a href="#" class="toggle-bar menu-two-icon" onclick="toggleSidebar()">
+                    <span class="side-nav-items-icon"></span>
+                    <span class="side-nav-items-icon"></span>
+                    <span class="side-nav-items-icon"></span>
+                </a>
+                <div id="mySidebar" class="sidebar">
+                    <ul class="section-sidebar" id="main">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <li><a href="">Family</a></li>
+                        <li><a href="">Spice</a></li>
+                        <li><a href="">Special Feature</a></li>
+                        <li><a href="">Education</a></li>
+                        <li><a href="">Vox Pop</a></li>
+                        <li><a href="">Relationships</a></li>
+                        <li><a href="">Letters</a></li>
+                        <li><a href="">Punch Games</a></li>
+                        <li><a href="">Jobs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggleSidebar() {
+                document.getElementById("mySidebar").style.width = "200px";
+                document.getElementById("mySidebar").style.height = "220px";
+                document.getElementById("mySidebar").style.position = "relative";
+
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+
+            }
+        </script>
+    </header>
+
+    <main>
+        <article class="enews-main">
+            <h2>ENTERTAINMENT</h2>
+            <section class="main-enews-header">
+                <div class="main-enews-header-img">
+                    <a href=""><img src="nicki.jpg" alt="Nicki Minaj performs in Saudi Arabia"></a>
+                </div>
+                <a href="">
+                    <h4>NICKI MINAJ PERFORMS IN SAUDI ARABIA</h4>
+                </a>
+            </section>
+            <section class="bullet-enews">
+                <div class="b-enews">
+                    <div class="b-enews-img">
+                        <img src="be-1.jpg" alt="News bulletin">
+                    </div>
+                    <p>
+                        <a href="">
+                            2019 BBNaija: Isilomo seeks alliance with fellow housemate, Ella
+                        </a>
+                    </p>
+                </div>
+                <div class="b-enews">
+                    <div class="b-enews-img">
+                        <img src="nicki.jpg" alt="News bulletin">
+                    </div>
+                    <p>
+                        <a href="">
+                            Nicki Minaj Performs in Saudi Arabia
+                        </a>
+                    </p>
+                </div>
+                <div class="b-enews">
+                    <div class="b-enews-img">
+                        <img src="afolayan.jpg" alt="News bulletin">
+                    </div>
+                    <p>
+                        <a href="">
+                            Netflix acquire Kunle Afolayan's Mokalik
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+            <article class="enews-details">
+                <div class="enews-details-main">
+                    <div class="enews-details-img">
+                        <img src="nicki.jpg" alt="nicki minaj performs in SA">
+                    </div>
+                    <p>
+                        US rapper Nicki Minaj will perform in Saudi Arabia this month, organisers said, triggering a
+                        storm on social media as the ultra-conservative kingdom loosens decades-old restrictions on
+                        entertainment.
+                        Minaj, known for her profanity-laced lyrics and raunchy music videos, will perform in the
+                        western city of Jeddah on July 18, organisers of the ongoing Jeddah Season cultural festival
+                        announced on Twitter on Tuesday.
+                        The headline act, to be televised on MTV, will also feature British musician Liam Payne and
+                        American DJ Steve Aoki, local media reported.
+                    </p>
+
+                </div>
+                <hr>
+                <div class="enews-details-main">
+                    <div class="enews-details-img">
+                        <img src="afolayan.jpg" alt="nicki minaj performs in SA">
+                    </div>
+                    <p>
+                        Netflix, the America streaming giant, has acquired award-winning director and producer Kunle
+                        Afolayan’s new movie ‘Mokalik.’
+                        Afolayan disclosed this in an interview with the News Agency of Nigeria on Wednesday on the
+                        sideline of the French-Nigerian Cinema Days holding from July 2-3 at the Alliance Francaise,
+                        Ikoyi, Lagos.
+                        “I wish to inform you that Netflix has acquired “Mokalik” and some other of my films,” he said.
+                    </p>
+
+                </div>
+                <hr>
+                <div class="enews-details-main">
+                    <div class="enews-details-img">
+                        <img src="be-1.jpg" alt="nicki minaj performs in SA">
+                    </div>
+                    <p>
+                        US rapper Nicki Minaj will perform in Saudi Arabia this month, organisers said, triggering a
+                        storm on social media as the ultra-conservative kingdom loosens decades-old restrictions on
+                        entertainment.
+                        Minaj, known for her profanity-laced lyrics and raunchy music videos, will perform in the
+                        western city of Jeddah on July 18, organisers of the ongoing Jeddah Season cultural festival
+                        announced on Twitter on Tuesday.
+                        The headline act, to be televised on MTV, will also feature British musician Liam Payne and
+                        American DJ Steve Aoki, local media reported.
+                    </p>
+
+                </div>
+                <hr>
+            </article>
+        </article>
+
+        <aside class="enews-side">
+
+            <div class="trending">
+                <h5>
+                    TRENDING
+                </h5>
+            </div>
+
+
+        </aside>
+    </main>
+    <div class="clearfix"></div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
