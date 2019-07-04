@@ -35,12 +35,13 @@ header .nav-logo p{
 	line-height: 0.1em;
 }
 
+/*navigation styles*/
+
 header menu .side-mid ul{
 	width: 60%;
 	float: left;
 }
 
-/*navigation styles*/
 header menu li{
 	float: left;
 	display: inline-block;
@@ -594,7 +595,314 @@ footer a{
 /*sidebar style ends*/
 
 
+/*responsive phone design*/
+/*min-width: 300px to 550px, basically for a small width phone*/
 
+@media screen and (min-width:300px) and (max-width:550px){
+    
+/*header section*/    
+    header{
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid grey;
+	height: 12em;
+	position: fixed;
+	background-color: #fff;
+	z-index: 4;
+}
+   header .nav-logo{
+	   width: 100%;
+	   float: left;
+	   margin-left: 0%;
+        display: block;
+    }
+    
+    header .nav-logo h1, p{
+        text-align: center
+    }
+    
+    header menu .side-mid ul{
+	   width: 100%;
+	   float: left;
+       background-color: #000;
+       display: block;
+       margin-left: -20%;   
+}
+    header menu .side-mid {
+        background-color: #000;
+        display: block;
+        width:100%;
+        float: left;
+    }
+    
+   header menu li{
+	   float: left;
+	   display: block;
+	   list-style-type: none;
+	   width: 90%;
+	   margin-left: -15%;
+	   margin-top: 0%;
+    } 
+
+    header menu li a{
+	   font-size: 0.8em;
+	   font-family: Arial;
+	   text-align: center;
+	   display: block;
+	   width: 100%;
+	   text-decoration: none;
+	   color: #fff;
+	   line-height: 4em;
+        background-color: #000;
+    }
+
+    header menu li a:hover{
+	   border-bottom: 3px solid red;
+	   border-top: 3px solid #000;
+       color: #000;
+       background-color: #fff;
+       transition: all 0.5 ease; 
+       -webkit-transition: all 0.5 ease; 
+       -moz-transition: all 0.5 ease; 
+       -ms-transition: all 0.5 ease; 
+       -o-transition: all 0.5 ease; 
+    }
+    /*style for the dropdown*/
+    .menu-btn{
+        margin-top: 7%;
+        float: left;
+        width: 100%;
+    }
+    
+    .menu-btn span{
+        border-top:4px solid red;
+        display: block;
+        width: 30%;
+        float: left;
+        height: 2em;
+        margin-left: 27.5%;
+        margin-top: -4%;
+    }
+    
+    .side-mid .menu-btn li{
+        display: none;
+    }
+    
+    .side-mid .menu-btn:hover li{
+        display: block;
+    }
+    
+    .side-nav{
+        display: none;
+    }
+    /*end of style for dropdown*/
+    /*end of style for header section*/
+    
+    /*body section*/
+    .body-left{
+        width: 100%;
+        float: left;
+        display: block;
+        margin-top: 10em;
+    }
+    
+    .body-left .first-section{
+        width: 100%;
+        float: left;
+    }
+    
+    .body-left .first-section .first-left{
+	width: 90%;
+	float: left;
+	margin-left: 2.5%;
+    display: block;
+}
+    
+    .body-left .first-section .first-right{
+	width: 85%;
+	float: left;
+}
+    
+  .second-section{
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+	margin-top: 10%;
+}
+    
+  /*side bar styles*/.body-right{
+	width: 100%;
+	margin-left: 2.5%;
+	float: left;
+	/*border: 1px solid #564;*/
+	height: auto;
+}
+    
+    .vid-left{
+	   width: 100%;
+	   float: left;
+	   margin-left: 0%;
+}
+    
+    .vid-right{
+	width: 80%;
+	float: left;
+	margin-left: 10%;
+	background-color: #000;
+}
+    
+    .body-rest .rest-col{
+	width: 80%;
+	float: left;
+	margin-left: 10%;
+    margin-top: 5%;
+	text-align: center;
+	box-shadow: 0 0 3px #000;
+	font-family: Arial;
+}
+/*end of body section*/
+    
+/*footer section*/    
+    
+    footer a{
+	width: 40%;
+	float: left;
+	margin-left: 10%;
+	line-height: 1em;
+    font-size: 0.8em;
+	color: #fff;
+	text-decoration: none;
+	font-family: Arial;
+}
+    
+    
+}
+/*end of small phone design*/
+/*begining of tablet and laptop*/
+
+@media screen and (min-width:551px) and (max-width:850px ){
+    
+    .body-left{
+        margin-top: 5em;
+    }
+    
+    .body-left .first-section .first-left{
+	width: 90%;
+	float: left;
+	margin-left: 2.5%;
+    display: block;
+}
+    
+    .body-left .first-section .first-right{
+	width: 85%;
+	float: left;
+}
+    
+    .body-right .dets a{
+	display: inline-block;
+	width: 80%;
+	background-color: #000;
+	color: #fff;
+	border-radius: 2em;
+	line-height: 4em;
+	text-align: center;
+	text-decoration: none;
+}
+    
+    .archive li a{
+	font-family: Arial;
+	font-size: 0.8em;
+	color: #000;
+	display: block;
+	width: 90%;
+	line-height: 3em;
+	list-style-type: none;
+	margin-left: -10%;
+	width: 100%;
+	text-decoration: none;
+	text-align: left;
+	border-bottom: 0.1em solid #000;
+}
+    
+    header .nav-logo p{
+	font-size: 0.7em;
+	line-height: 0.1em;
+}
+     /*style for the dropdown*/
+    
+        header menu .side-mid {
+        background-color: #000;
+        display: block;
+        width:100%;
+        float: left;
+        margin-top: -10%;
+    }
+    
+   header menu li{
+	   float: left;
+	   display: block;
+	   list-style-type: none;
+	   width: 60%;
+	   margin-left: 25%;
+	   margin-top: 0%;
+    } 
+
+    header menu li a{
+	   font-size: 0.8em;
+	   font-family: Arial;
+	   text-align: center;
+	   display: block;
+	   width: 100%;
+	   text-decoration: none;
+	   color: #fff;
+	   line-height: 4em;
+        background-color: #000;
+    }
+
+    header menu li a:hover{
+	   border-bottom: 3px solid red;
+	   border-top: 3px solid #000;
+       color: #000;
+       background-color: #fff;
+       transition: all 0.5 ease; 
+       -webkit-transition: all 0.5 ease; 
+       -moz-transition: all 0.5 ease; 
+       -ms-transition: all 0.5 ease; 
+       -o-transition: all 0.5 ease; 
+    }
+    
+    .menu-btn{
+        margin-top: -7%;
+        float: left;
+        width: 100%;
+    }
+    
+    .menu-btn span{
+        border-top:4px solid red;
+        display: block;
+        width: 15%;
+        float: left;
+        height: 2em;
+        margin-left: 60%;
+        margin-top: -3%;
+    }
+    
+    .side-mid .menu-btn li{
+        display: none;
+    }
+    
+    .side-mid .menu-btn:hover li{
+        display: block;
+    }
+    
+    .side-nav{
+        display: none;
+    }
+    
+    
+    /*end of style for dropdown*/
+    
+}
 
 
 
