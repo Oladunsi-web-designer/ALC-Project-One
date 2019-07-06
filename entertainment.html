@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="ayodejiLogo.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="entStyle.css" type="text/css">
 </head>
 
@@ -18,8 +19,28 @@
                     <img src="ayodejiLogo.png" alt="logo">
                 </a>
             </div>
+            <div class="resp-menu">
+                <a href="#" class="resp-icon" onclick="openUl()">
+
+                    <span class="resp-items-icon">
+                        <h5>MENU</h5>
+                    </span>
+                    <span class="resp-items-icon"></span>
+                    <span class="resp-items-icon"></span>
+                </a>
+            </div>
+            <script>
+                function openUl() {
+                    var x = document.getElementById("nav-list");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
             <nav>
-                <ul>
+                <ul id="nav-list">
                     <li><a>Home</a></li>
                     <li><a>News</a></li>
                     <li><a>Afcon 2019</a></li>
@@ -50,9 +71,19 @@
                     <span class="side-nav-items-icon"></span>
                     <span class="side-nav-items-icon"></span>
                 </a>
-                <div id="mySidebar" class="sidebar">
+                <script>
+                    function toggleSidebar() {
+                        var x = document.getElementById("main");
+                        if (x.style.display === "block") {
+                            x.style.display = "none";
+                        } else {
+                            x.style.display = "block";
+                        }
+                    }
+                </script>
+                
                     <ul class="section-sidebar" id="main">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                       
                         <li><a href="">Family</a></li>
                         <li><a href="">Spice</a></li>
                         <li><a href="">Special Feature</a></li>
@@ -63,24 +94,9 @@
                         <li><a href="">Punch Games</a></li>
                         <li><a href="">Jobs</a></li>
                     </ul>
-                </div>
+                
             </div>
         </div>
-
-        <script>
-            function toggleSidebar() {
-                document.getElementById("mySidebar").style.width = "200px";
-                document.getElementById("mySidebar").style.height = "220px";
-                document.getElementById("mySidebar").style.position = "relative";
-
-            }
-
-            function closeNav() {
-                document.getElementById("mySidebar").style.width = "0";
-                document.getElementById("main").style.marginLeft = "0";
-
-            }
-        </script>
     </header>
 
     <main>
@@ -88,117 +104,184 @@
             <h1>Entertainment</h1>
             <section class="main-enews-header">
                 <div class="headline col-md-6">
-                <a href="">
-                    <figure>
+                    <a href="">
+                        <figure>
                             <img src="nicki.jpg" alt="Nicki Minaj performs in Saudi Arabia">
-                            <figcaption><h4>NICKI MINAJ PERFORMS IN SAUDI ARABIA</h4></figcaption>
-                    </figure>
-                    
-                </a>
+                            <figcaption>
+                                <h4>NICKI MINAJ PERFORMS IN SAUDI ARABIA</h4>
+                            </figcaption>
+                        </figure>
+
+                    </a>
                 </div>
-            <section>
-            <div class="section-two col-md-12">
-            <div class="col-md-9">
-                <div class="b-enews col-md-4">
-                    <div class="b-enews-img">
-                        <img src="be-1.jpg" alt="News bulletin">
-                    </div>
-                    <p>
-                        <a href="">
-                            2019 BBNaija: Isilomo seeks alliance with fellow housemate, Ella
-                        </a>
-                    </p>
-                </div>
-                <div class="b-enews col-md-4">
-                    <div class="b-enews-img">
-                        <img src="nicki.jpg" alt="News bulletin">
-                    </div>
-                    <p>
-                        <a href="">
-                            Nicki Minaj Performs in Saudi Arabia
-                        </a>
-                    </p>
-                </div>
-                <div class="b-enews col-md-4">
-                    <div class="b-enews-img">
-                        <img src="afolayan.jpg" alt="News bulletin">
-                    </div>
-                    <p>
-                        <a href="">
-                            Netflix acquire Kunle Afolayan's Mokalik
-                        </a>
-                    </p>
-                </div>
-            </div>
-              
+                <section>
+                    <div class="section-two col-md-12">
+                        <div class="col-md-9">
+                            <div class="b-enews col-md-4">
+                                <div class="b-enews-img">
+                                    <img src="be-1.jpg" alt="News bulletin">
+                                </div>
+                                <p>
+                                    <a href="">
+                                        2019 BBNaija: Isilomo seeks alliance with fellow housemate, Ella
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="b-enews col-md-4">
+                                <div class="b-enews-img">
+                                    <img src="nicki.jpg" alt="News bulletin">
+                                </div>
+                                <p>
+                                    <a href="">
+                                        Nicki Minaj Performs in Saudi Arabia
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="b-enews col-md-4">
+                                <div class="b-enews-img">
+                                    <img src="afolayan.jpg" alt="News bulletin">
+                                </div>
+                                <p>
+                                    <a href="">
+                                        Netflix acquire Kunle Afolayan's Mokalik
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
                         <div class="col-md-3 trending-news">
                             <div class="trending">
-                            <h5>
-                                TRENDING
-                            </h5>
+                                <h5>
+                                    TRENDING
+                                </h5>
+                            </div>
+                            <div class="trending-contents">
+                                <div class="tc-img"><img src="guitar.jpeg" alt="music instrument"></div>
+                                <p>
+                                    <a href="">Music brings peace to the soul and relaxed mind</a>
+                                </p>
+                            </div>
+                            <div class="trending-contents">
+                                <div class="tc-img"><img src="beauty-queen.jpg" alt="music instrument"></div>
+                                <p>
+                                    <a href="">Beauty is not all about physical appearance, it involves the inner
+                                        mind</a>
+                                </p>
+                            </div>
+                            <div class="trending-contents">
+                                <div class="tc-img"><img src="nicki.jpg" alt="music instrument"></div>
+                                <p>
+                                    <a href="">Nicki Minaj BET Awards performance</a>
+                                </p>
+                            </div>
+                            <div class="trending-contents">
+                                <div class="tc-img"><img src="afolayan.jpg" alt="music instrument"></div>
+                                <p>
+                                    <a href="">Yoruba movies getting bigger accaptance now than in the 90's </a>
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+
+
+
+                <section class="enews-details">
+                    <div class="enews-details-main">
+                        <div class="enews-details-img">
+                            <img src="nicki.jpg" alt="nicki minaj performs in SA">
+                        </div>
+                        <h5> Nicki Minaj Performs in Saudi Arabia</h5>
+                        <p>
+                            US rapper Nicki Minaj will perform in Saudi Arabia this month, organisers said, triggering a
+                            storm on social media as the ultra-conservative kingdom loosens decades-old restrictions on
+                            entertainment.
+                            Minaj, known for her profanity-laced lyrics and raunchy music videos, will perform in the
+                            western city of Jeddah on July 18, organisers of the ongoing Jeddah Season cultural festival
+                            announced on Twitter on Tuesday.
+                            The headline act, to be televised on MTV, will also feature British musician Liam Payne and
+                            American DJ Steve Aoki, local media reported.
+                        </p>
+                        <div class="enews-date">
+                            <div class="enews-date-day">Saturday</div>
+                            <div class="enews-date-date">July 6th, 2019</div>
                         </div>
                     </div>
-               
-                
-</div>
-            </section>
-
-            
-
-            <section class="enews-details">
-                <div class="enews-details-main">
-                    <div class="enews-details-img">
-                        <img src="nicki.jpg" alt="nicki minaj performs in SA">
+                    <hr>
+                    <div class="enews-details-main">
+                        <div class="enews-details-img">
+                            <img src="afolayan.jpg" alt="nicki minaj performs in SA">
+                        </div>
+                        <h5>Netflix acquire Kunle Afolayan's Mokalik</h5>
+                        <p>
+                            Netflix, the America streaming giant, has acquired award-winning director and producer Kunle
+                            Afolayan’s new movie ‘Mokalik.’
+                            Afolayan disclosed this in an interview with the News Agency of Nigeria on Wednesday on the
+                            sideline of the French-Nigerian Cinema Days holding from July 2-3 at the Alliance Francaise,
+                            Ikoyi, Lagos.
+                            “I wish to inform you that Netflix has acquired “Mokalik” and some other of my films,” he
+                            said.
+                        </p>
+                        <div class="enews-date">
+                            <div class="enews-date-day">Saturday</div>
+                            <div class="enews-date-date">July 6th, 2019</div>
+                        </div>
                     </div>
-                    <h5> Nicki Minaj Performs in Saudi Arabia</h5>
-                    <p>
-                        US rapper Nicki Minaj will perform in Saudi Arabia this month, organisers said, triggering a
-                        storm on social media as the ultra-conservative kingdom loosens decades-old restrictions on
-                        entertainment.
-                        Minaj, known for her profanity-laced lyrics and raunchy music videos, will perform in the
-                        western city of Jeddah on July 18, organisers of the ongoing Jeddah Season cultural festival
-                        announced on Twitter on Tuesday.
-                        The headline act, to be televised on MTV, will also feature British musician Liam Payne and
-                        American DJ Steve Aoki, local media reported.
-                    </p>
-
-                </div>
-                <hr>
-                <div class="enews-details-main">
-                    <div class="enews-details-img">
-                        <img src="afolayan.jpg" alt="nicki minaj performs in SA">
+                    <hr>
+                    <div class="enews-details-main">
+                        <div class="enews-details-img">
+                            <img src="be-1.jpg" alt="nicki minaj performs in SA">
+                        </div>
+                        <h5>2019 BBNaija: Isilomo seeks alliance with fellow housemate, Ella</h5>
+                        <p>
+                            Isilomo Braimoh a housemate in the ongoing BBNaija season 4 reality show proposed a
+                            strategic alliance with fellow housemate, Ella.
+                            News Agency of Nigeria reports that Isilomoh told Ella that they needed to stick together
+                            and not nominate each other during the course of the show.
+                            She said this while comforting Ella who took time to share her life struggles before the
+                            show, especially her relationship with her parents.
+                        </p>
+                        <div class="enews-date">
+                            <div class="enews-date-day">Saturday</div>
+                            <div class="enews-date-date">July 6th, 2019</div>
+                        </div>
                     </div>
-                    <h5>Netflix acquire Kunle Afolayan's Mokalik</h5>
-                    <p>
-                        Netflix, the America streaming giant, has acquired award-winning director and producer Kunle
-                        Afolayan’s new movie ‘Mokalik.’
-                        Afolayan disclosed this in an interview with the News Agency of Nigeria on Wednesday on the
-                        sideline of the French-Nigerian Cinema Days holding from July 2-3 at the Alliance Francaise,
-                        Ikoyi, Lagos.
-                        “I wish to inform you that Netflix has acquired “Mokalik” and some other of my films,” he said.
-                    </p>
+                    <hr>
 
-                </div>
-                <hr>
-                <div class="enews-details-main">
-                    <div class="enews-details-img">
-                        <img src="be-1.jpg" alt="nicki minaj performs in SA">
+                </section>
+                <section class="also-trending">
+                    <div class="trending">
+                        <h5>
+                            ALSO TRENDING
+                        </h5>
                     </div>
-                    <h5>2019 BBNaija: Isilomo seeks alliance with fellow housemate, Ella</h5>
-                    <p>
-                        US rapper Nicki Minaj will perform in Saudi Arabia this month, organisers said, triggering a
-                        storm on social media as the ultra-conservative kingdom loosens decades-old restrictions on
-                        entertainment.
-                        Minaj, known for her profanity-laced lyrics and raunchy music videos, will perform in the
-                        western city of Jeddah on July 18, organisers of the ongoing Jeddah Season cultural festival
-                        announced on Twitter on Tuesday.
-                        The headline act, to be televised on MTV, will also feature British musician Liam Payne and
-                        American DJ Steve Aoki, local media reported.
-                    </p>
-
-                </div>
-                <hr>
-            </section>
+                    <div class="at-contents">
+                        <div class="atc-img"><img src="football.jpg" alt="music instrument"></div>
+                        <p>
+                            <a href="">Copa America takes center stage with band performance</a>
+                        </p>
+                    </div>
+                    <div class="at-contents">
+                        <div class="atc-img"><img src="be-1.jpg" alt="music instrument"></div>
+                        <p>
+                            <a href="">BBN - Who is next for the exit door</a>
+                        </p>
+                    </div>
+                    <div class="at-contents">
+                        <div class="atc-img"><img src="guitar.jpeg" alt="music instrument"></div>
+                        <p>
+                            <a href="">New Record Label endorsed by Nigeria music icon</a>
+                        </p>
+                    </div>
+                    <div class="at-contents">
+                        <div class="atc-img"><img src="golf.jpg" alt="music instrument"></div>
+                        <p>
+                            <a href="">Golf - May not be as entertaining like football but it's for real men</a>
+                        </p>
+                    </div>
+                </section>
             </section>
         </article>
 
@@ -208,7 +291,7 @@
     <footer>
         <div class="foot-items">
             <div class="foot-img">
-            <img src="ayodejiLogo.png" alt="logo">
+                <img src="ayodejiLogo.png" alt="logo">
             </div>
             <p>
                 <a href="">Punch.com</a>
